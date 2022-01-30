@@ -103,7 +103,7 @@ const Post = ({postData}) => {
     return (
         <div className="post" style={{display: 'flex', flexDirection: 'column' }} >
            <Typography className="name" variant="h5">{postData.creator_name}</Typography>
-           <Typography className="email" variant="h6">{postData.creator}</Typography>
+           {/* <Typography className="email" variant="h6">{postData.creator}</Typography> */}
            <div className="tags">
                {
                    postData.tags && 
