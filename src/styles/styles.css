@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav .main {
+  color: #1d8a99;
+}
+
+nav .links {
+  display: none;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .hamburger {
+  display: block;
+}
+
+.home {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+.home .searchbar {
+  width: 80vw;
+  border: 1px solid black;
+  background: #1d8a99;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home .searchbar .search-icon {
+  color: white;
+}
+
+.home .searchbar input {
+  font-size: 1.2em;
+  background: #1d8a99;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.home .searchbar input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.home .searchbar input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.home .searchbar input::-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.home .searchbar input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.home .create-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  background: rgba(29, 138, 153, 0.18);
+  padding: 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home .create-post form {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .create-post form input,
+.home .create-post form textarea {
+  border: 1px solid black;
+  padding: 0.7em;
+  margin: 0.6em 0;
+  background: #1d8a99;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.home .create-post form input::-webkit-input-placeholder,
+.home .create-post form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.home .create-post form input:-ms-input-placeholder,
+.home .create-post form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.home .create-post form input::-ms-input-placeholder,
+.home .create-post form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.home .create-post form input::placeholder,
+.home .create-post form textarea::placeholder {
+  color: white;
+}
+
+.home .create-post form .tag-input {
+  height: 1.5em;
+}
+
+.home .create-post form .msg-input {
+  font-family: "Lato";
+  height: 5em;
+}
+
+.home .create-post form .submit {
+  border: 1px solid black;
+  background: #c2b280;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home .create-post form .submit svg {
+  margin: 0 0.5em;
+}
+
+.home .posts .post {
+  width: 80vw;
+  border: 1px solid black;
+  padding: 0.7em;
+  margin: 1em 0;
+  border-radius: 5px;
+  background: rgba(29, 138, 153, 0.18);
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home .posts .post .email {
+  color: gray;
+}
+
+.home .posts .post .message {
+  margin: 0.5em 0;
+}
+
+.home .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .tags .tag {
+  border: 1px solid black;
+  background: #c2b280;
+  padding: 0.2em 1em;
+  border-radius: 15px;
+  margin: 10px 0.6em 10px 0;
+  color: white;
+}
+
+.home .compose {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 5em;
+  height: 5em;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1d8a99;
+  color: white;
+}
+
+@media (min-width: 450px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .links a {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.1em;
+  }
+  nav .hamburger {
+    display: none;
+  }
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile h3 {
+  color: gray;
+}
+
+.profile button {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=styles.css.map */

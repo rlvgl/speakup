@@ -1,0 +1,227 @@
+//FONTS:
+
+// poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+// darker groteque
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&display=swap');
+
+// Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$main-font: 'Lato';
+
+$primary: #1d8a99;
+$primaryLight: rgba(29, 138, 153, 0.18);
+$secondary: #c2b280;
+
+//BOX SHADOW: box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+$breakpoint-mobile: 450px;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $main-font;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+nav {
+	width: 100vw;
+	height: 10vh;
+	background: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+
+	.main {
+		color: $primary;
+	}
+
+	.links {
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		display: none;
+	}
+	.hamburger {
+		display: block;
+	}
+}
+
+.home {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 0;
+
+	.searchbar {
+		width: 80vw;
+		border: 1px solid black;
+		background: $primary;
+		border-radius: 20px;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5em 1em;
+		margin: 1em 0;
+		box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+		.search-icon {
+			color: white;
+		}
+
+		input {
+			font-size: 1.2em;
+			background: $primary;
+			border: none;
+			color: white;
+			width: 100%;
+			margin-right: 10px;
+
+			&::placeholder {
+				color: white;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.create-post {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		background: $primaryLight;
+		padding: 1em;
+		border-radius: 5px;
+		box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+		form {
+			width: 80vw;
+			display: flex;
+			flex-direction: column;
+
+			input,
+			textarea {
+				border: 1px solid black;
+				padding: 0.7em;
+				margin: 0.6em 0;
+				background: $primary;
+				color: white;
+				border: none;
+				border-radius: 10px;
+
+				&::placeholder {
+					color: white;
+				}
+			}
+
+			.tag-input {
+				height: 1.5em;
+			}
+
+			.msg-input {
+				font-family: $main-font;
+				height: 5em;
+			}
+
+			.submit {
+				border: 1px solid black;
+				background: $secondary;
+				box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+				svg {
+					margin: 0 0.5em;
+				}
+			}
+		}
+	}
+
+	.posts {
+		.post {
+			width: 80vw;
+			border: 1px solid black;
+			padding: 0.7em;
+			margin: 1em 0;
+			border-radius: 5px;
+			background: $primaryLight;
+			box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+			.email {
+				color: gray;
+			}
+
+			.message {
+				margin: 0.5em 0;
+			}
+		}
+	}
+	.tags {
+		display: flex;
+
+		.tag {
+			border: 1px solid black;
+			background: $secondary;
+			padding: 0.2em 1em;
+			border-radius: 15px;
+			margin: 10px 0.6em 10px 0;
+			color: white;
+		}
+	}
+
+	.compose {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+		width: 5em;
+		height: 5em;
+		border: 1px solid black;
+		display: flex;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		background: $primary;
+		color: white;
+	}
+}
+
+// above mobile
+@media (min-width: $breakpoint-mobile) {
+	nav {
+		justify-content: space-around;
+		.links {
+			display: flex;
+			align-items: center;
+			a {
+				padding: 1em;
+				margin: 1em;
+				font-size: 1.1em;
+			}
+		}
+
+		.hamburger {
+			display: none;
+		}
+	}
+}
+
+.profile {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	h3 {
+		color: gray;
+	}
+	button {
+		margin-top: 2em;
+	}
+}
